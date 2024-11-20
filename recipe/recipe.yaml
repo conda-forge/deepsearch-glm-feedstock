@@ -15,7 +15,7 @@ source:
     - fix-numpy-dep.patch
 
 build:
-  number: 0
+  number: 1
   skip: win
   script:
     content: python -m pip install . -vv --no-deps --no-build-isolation
@@ -34,13 +34,13 @@ requirements:
     - ${{ stdlib("c") }}
     - cmake
     - ${{ "make" if unix else "ninja" }}
+    - pkg-config
   host:
     # build tools
     - python
     - poetry-core
     - pybind11 >=2.13.1
     - pip
-    - pkg-config
     # libraries
     - fmt
     - cxxopts
