@@ -41,7 +41,6 @@ requirements:
     - poetry-core
     - pybind11 >=2.13.1
     - pip
-    - pkg-config
     # libraries
     - fmt
     - cxxopts
