@@ -1,7 +1,7 @@
 context:
   name: deepsearch-glm
-  version: 0.26.1
-  python_min: 3.9
+  version: "1.0.0"
+  python_min: '3.9'
 
 package:
   name: ${{ name|lower }}
@@ -9,13 +9,13 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/deepsearch_glm-${{ version }}.tar.gz
-  sha256: c2938e99c4f9f48a8686d3c357778645ec76a78781c89d955720ef78502da830
+  sha256: e8dce88ac519a693c260f28bd3c4ec409811e65ade84fb508f6c6e37ca065e62
   patches:
     - fix-utfcpp.patch
     - fix-numpy-dep.patch
 
 build:
-  number: 1
+  number: 0
   skip: win
   script:
     content: python -m pip install . -vv --no-deps --no-build-isolation
