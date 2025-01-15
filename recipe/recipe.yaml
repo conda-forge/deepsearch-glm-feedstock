@@ -12,7 +12,7 @@ source:
   sha256: e8dce88ac519a693c260f28bd3c4ec409811e65ade84fb508f6c6e37ca065e62
   patches:
     - fix-utfcpp.patch
-    - fix-numpy-dep.patch
+    # - fix-numpy-dep.patch
 
 build:
   number: 0
@@ -58,7 +58,7 @@ requirements:
     - ${{ "pywin32 >=307" if win }}
     - docling-core >=2.0.0,<3.0.0
     - tabulate >=0.8.9
-    - pandas >=2.1.4,<3.0.0
+    - pandas >=1.5.1,<3.0.0
     - matplotlib-base >=3.7.1,<4.0.0
     - python-dotenv >=1.0.0,<2.0.0
     - tqdm >=4.64.0,<5.0.0
