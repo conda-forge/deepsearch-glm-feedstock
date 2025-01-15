@@ -55,15 +55,15 @@ requirements:
   run:
     - python
     - numpy
-    - pandas >=2.1.4,<3.0.0
+    - ${{ "pywin32 >=307" if win }}
     - docling-core >=2.0.0,<3.0.0
     - tabulate >=0.8.9
+    - pandas >=2.1.4,<3.0.0
+    - matplotlib-base >=3.7.1,<4.0.0
     - python-dotenv >=1.0.0,<2.0.0
     - tqdm >=4.64.0,<5.0.0
     - rich >=13.7.0,<14.0.0
-    - docutils !=0.21
     - requests >=2.32.3,<3.0.0
-    - ${{ "pywin32 >=307" if win }}
 
 tests:
   - python:
