@@ -11,7 +11,6 @@ source:
   sha256: e8dce88ac519a693c260f28bd3c4ec409811e65ade84fb508f6c6e37ca065e62
   patches:
     - fix-utfcpp.patch
-    # - fix-numpy-dep.patch
 
 build:
   number: 0
