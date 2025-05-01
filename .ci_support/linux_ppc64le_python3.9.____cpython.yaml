@@ -23,7 +23,7 @@ fmt:
 libsentencepiece:
 - 0.2.0
 pcre2:
-- '10.44'
+- '10.45'
 pin_run_as_build:
   python:
     min_pin: x.x
